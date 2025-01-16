@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: skyblue; 
+    color: white;
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Add underline on hover for better visibility */
+}
+
+.hero {
+    background: url('bg.jpg') no-repeat center center/cover;
+    color: black; 
+    padding: 80px 20px; 
+    text-align: center; 
+    min-height: 200px; 
+    font-size: 1.15em; 
+}
+
+.cta-button {
+    margin-top: 20px;
+    background: #FF5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+.cta-button:hover {
+    background: #FF4500; /* Darker shade on hover */
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+.justified {
+    text-align: justify; /* Justifies the text */
+    line-height: 1.5; /* Optional: improve readability with line height */
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto;
+}
+.os-head {
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+.os-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto; 
+    max-width: 1200px;
+}
+
+.os-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+.features-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-left, .features-right {
+    width: 48%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.testimonial-carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.testimonial {
+    min-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+}
+
+.newsletter {
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items */
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Vertical spacing for stacked items */
+    }
+
+    .features-layout {
+        flex-direction: column; /* Stack features layout on small screens */
+    }
+
+    .features-left, .features-right {
+        width: 100%; /* Full width on small screens */
+    }
+}
